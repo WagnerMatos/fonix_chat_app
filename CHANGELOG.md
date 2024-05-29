@@ -3,3 +3,5 @@
   Updated ruby version on .ruby-version file and added RSpec initial files
 ## 0.2.0
 - Added Devise and User model
+## 0.3.0
+- Added Message model
