@@ -1,0 +1,10 @@
+<h1>Chat Room</h1>
+<div id="chat">
+  <div id="messages">
+    <%= render @messages %>
+  </div>
+  <%= form_with(url: messages_path, id: 'message_form', local: false, data: { controller: "reset-form", action: "turbo:submit-end->reset-form#reset" }) do %>
+    <%= text_area_tag :message %>
+    <%= submit_tag 'Send' %>
+  <% end %>
+</div>

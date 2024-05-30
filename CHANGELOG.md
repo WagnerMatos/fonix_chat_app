@@ -5,3 +5,5 @@
 - Added Devise and User model
 ## 0.3.0
 - Added Message model
+## 0.4.0
+- Added chat functionality
