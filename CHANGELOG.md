@@ -7,3 +7,6 @@
 - Added Message model
 ## 0.4.0
 - Added chat functionality
+## 0.5.0
+- Added report and minor improvements
+  Added the reporting feature as well as improved the form, and fixed a coupl skipped tests

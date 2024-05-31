@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Messages", type: :request do
   let(:user) { User.create(email: "test@example.com", password: "password") }
-  let(:valid_attributes) { { message: "Hello" } }
+  let(:valid_attributes) { { content: "Hello" } }
 
   before do
     sign_in user

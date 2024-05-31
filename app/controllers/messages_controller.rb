@@ -2,7 +2,7 @@
 
 class MessagesController < ApplicationController
   def create
-    message = current_user.messages.create!(content: message_params[:message])
+    message = current_user.messages.create!(content: message_params[:content])
     ActionCable.server.broadcast "chat_channel", { message: render_message(message) }
     head :ok
   end
@@ -17,6 +17,6 @@ class MessagesController < ApplicationController
   end
 
   def message_params
-    params.permit(:message)
+    params.permit(:content)
   end
 end
